@@ -12,3 +12,6 @@ This project I'm working on will enable users to post updates to their friends a
   ## Current tech stack (subject to change)
   - Python
   - Flask
+
+  ### Extensions
+  - Flask-WTF

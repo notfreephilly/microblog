@@ -33,3 +33,14 @@ render_template()
 
 ###################################
 the 'extends' statement establishes the inheritance link between the two templates, so that Jinja knows that whhen it is asked to render index.html it needs to embed it inside base.html.
+
+
+##########################
+flask wtf extension command:
+- pip install flask-wtf
+- this is a thin wrapper around the  WTForms package that nicely integrates it with flask
+
+##############################
+forms.py
+- The optional validators  argument that you see in some of the fields is used to attach validation behaviors to fieldds
+- The DataRequired validator simply checks that the field is not submitted empty
