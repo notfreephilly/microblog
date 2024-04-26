@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+# how to tell flask to import application
+# set the FLASK_APP variable
+- export FLASK_APP=<application_name.py>
+- flask run
+
+
+# register flask environment variable
+- pip install python-dotenv
+
+
+###############################
+# {{ }} - placeholder for dynamic content
+        - these placeholders represent the parts of the page that are variable and will only be known at runtime
+
+
+#################################
+render_template()
+    - this function takes a template filename and a variable list of template arguments, and returns the same template, but with all the place holders in it replaced with the actual values
+    - render-template() function invokes the Jinja template engine that comes bundled with the flask framework
+    - Jinja substitutes {{ ... }} blocks with the  corresponding values, given by the args provided in the render_template() call
+
+
+
+###################################
+the 'extends' statement establishes the inheritance link between the two templates, so that Jinja knows that whhen it is asked to render index.html it needs to embed it inside base.html.
